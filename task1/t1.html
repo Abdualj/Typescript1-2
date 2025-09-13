@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="../build/t1.js" type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Shopping Cart</title>
+    <script src="./src/main.js"></script>
+
 </head>
-
 <body>
-  <h1>Sample Page</h1>
-</body>
+    <h1>TypeScript Shopping Cart Implementation</h1>
 
+        <div class="try-section">
+            <h2>Try It Out</h2>
+            <p>Click the button below to run the shopping cart code. You'll be prompted to enter items with their prices and quantities.</p>
+            <button class="btn" id="runButton">Run Shopping Cart</button>
+
+            <div id="result" style="display: none;">
+                <h3>Your Shopping Cart:</h3>
+                <div id="cartItems" class="item-list"></div>
+                <div id="cartTotal" class="total"></div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

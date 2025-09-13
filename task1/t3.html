@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details Form</title>
+    <script src="./src/main3.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book Details Form</h1>
+            <p>Enter information about your book</p>
+        </div>
+
+        <div class="content">
+            <div class="input-group">
+                <label for="bookTitle">Book Title:</label>
+                <input type="text" id="bookTitle" placeholder="Enter book title...">
+            </div>
+
+            <div class="input-group">
+                <label for="bookAuthor">Author:</label>
+                <input type="text" id="bookAuthor" placeholder="Enter author name...">
+            </div>
+
+            <div class="input-group">
+                <label for="bookPublicationYear">Publication Year:</label>
+                <input type="number" id="bookPublicationYear" placeholder="Enter publication year..." min="1000" max="2023">
+            </div>
+
+            <button id="submitBtn">Submit Book Details</button>
+
+            <div class="result" id="resultContainer" style="display: none;">
+                <h3>Book Details:</h3>
+                <div id="bookDetailsOutput"></div>
+            </div>
+
+            <div class="code-container">
+                <pre><code><span class="comment">// Type alias for Book</span>
+
+</body>
+</html>

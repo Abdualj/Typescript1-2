@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Type Selector</title>
+    <script src="./src/main4.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Product Type Selector</h1>
+            <p>Create electronic devices or books and view their details</p>
+        </div>
+
+        <div class="content">
+            <div class="tabs">
+                <div class="tab active" data-tab="electronic">Electronic Device</div>
+                <div class="tab" data-tab="book">Book</div>
+            </div>
+
+            <div class="form-container">
+                <div id="electronicForm">
+                    <div class="input-group">
+                        <label for="deviceBrand">Brand:</label>
+                        <input type="text" id="deviceBrand" placeholder="Enter brand name...">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="deviceModel">Model:</label>
+                        <input type="text" id="deviceModel" placeholder="Enter model name...">
+                    </div>
+
+                    <button id="createDeviceBtn">Create Electronic Device</button>
+                </div>
+
+                <div id="bookForm" style="display: none;">
+                    <div class="input-group">
+                        <label for="bookTitle">Title:</label>
+                        <input type="text" id="bookTitle" placeholder="Enter book title...">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="bookAuthor">Author:</label>
+                        <input type="text" id="bookAuthor" placeholder="Enter author name...">
+                    </div>
+
+                    <button id="createBookBtn">Create Book</button>
+                </div>
+            </div>
+
+            <div class="result" id="resultContainer" style="display: none;">
+                <h3 id="resultTitle">Product Details:</h3>
+                <div id="productDetails"></div>
+            </div>
+
+            <div class="code-container">
+                <pre><code><span class="comment">// Define the 'ElectronicDevice' type</span>
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
